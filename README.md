@@ -1,2 +1,3 @@
-# Focus-Website
-HTML5 &amp; CSS3 &amp; JS
+# Focus-Website-v1
+- HTML5 &amp; CSS3
+- fontawesome
