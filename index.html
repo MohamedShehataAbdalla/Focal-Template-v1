@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="uts-8"/>
-		<title>My Web Page</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Focal</title>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="css/normalize.css"/>
 		<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	</head>
 	<body>
+
+		<!-- Start Up Button -->
+			<span class="up"><i class="fa fa-angle-up"></i></span>
+		<!-- End Up Button -->
+
 
 		<!-- Start Header  -->
 
@@ -15,22 +22,23 @@
 		<div class="slider">
 			<div class="container">
 				<div class="intro  text-center text-uppercase">
-					<h2>Web &amp; Graphic Designer</h2>
+					<h2>Focus Company</h2>
+					<h3>Web &amp; Graphic Designer</h3>
 					<button class="text-uppercase bold">Learn More</button>
 				</div>
 			</div>
 		</div>
 		<nav class="nav flow-hidden text-uppercase">
 			<div class="container">
-				<h2 class="flt-left">FO<span>CAL</span></h2>
+				<h2 class="flt-left"><a href="index.html">FO<span>CUS</span></a></h2>
 				<ul class="flow-hidden">
-					<li><a href="index.html"  class="active">Home</a></li>
-					<li><a href="#aboutUs">About Us</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#resume">Resume</a></li>
-					<li><a href="#testimonials">Testemonials</a></li>
-					<li><a href="#portofolio">Portofolio</a></li>
-					<li><a href="#contact">Contact Me</a></li>
+					<li><a href="#" data-section=".header" class="active">Home</a></li>
+					<li><a href="#" data-section=".aboutUs">About Us</a></li>
+					<li><a href="#" data-section=".skills">Skills</a></li>
+					<li><a href="#" data-section=".resume">Resume</a></li>
+					<li><a href="#" data-section=".testimonials">Testemonials</a></li>
+					<li><a href="#" data-section=".portofolio">Portofolio</a></li>
+					<li><a href="#" data-section=".contact">Contact Me</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -42,32 +50,35 @@
 
 		<section class="features">
 			<div class="container">
-				<div class="feat flt-left">
-					<h2 class="my-title-s">Value</h2>
-					<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
-				</div>
-				<div class="feat flt-left">
-					<h2 class="my-title-s">Goals</h2>
-					<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
-				</div>
-				<div class="feat flt-left">
-					<h2 class="my-title-s">Hobbies</h2>
-					<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+				<div class="feat-content">
+					<div class="feat">
+						<h2 class="my-title-s">Value</h2>
+						<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+					</div>
+					<div class="feat">
+						<h2 class="my-title-s">Goals</h2>
+						<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+					</div>
+					<div class="feat">
+						<h2 class="my-title-s">Hobbies</h2>
+						<p class=" ">Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- End Features -->
 
 		<!-- Start About Me -->
-		<section id="aboutUs" class="about-me flow-hidden">
+		<section id="aboutUs" class="aboutUs about-me flow-hidden">
+			<div class="aboutUs-contecnt">
 				<figure class="figure-image flt-left">
 					<img src="images/profile.jpg" alt="profile" />
 				</figure>
-				<div class="info flt-left">
+				<div class="info">
 					<h2 class="my-title">About Me</h2>
 					<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.</p>
 					<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.</p>
-					<div class="hoppies flow-hidden">
+					<div class="hoppies">
 						<div class="item flt-left">
 							<figure class="icon flt-left">
 								<i class="fa fa-home fa-3x"></i>
@@ -109,6 +120,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 		<!-- End About Me -->
 
@@ -116,6 +128,7 @@
 		<!-- Start Skills -->
 		<section id="skills" class="skills flow-hidden">
 			<div class="container">
+				<div class="skills-content">
 					<div class="my-skills flt-left">
 						<h2 class="my-title">My Skills</h2>
 						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
@@ -126,28 +139,29 @@
 						<div class="technique">
 							<h3>Html/Css</h3>
 							<div>
-									<span class="bold" style="width:88%">88% &nbsp;</span>
+									<span class="bold" data-progress="88%"></span>
 							</div>
 						</div>
 						<div class="technique">
 							<h3>Java Script</h3>
 							<div>
-									<span class="bold" style="width:70%">70% &nbsp;</span>
+									<span class="bold" data-progress="70%"></span>
 							</div>
 						</div>
 						<div class="technique">
 							<h3>Asp.net C#</h3>
 							<div>
-									<span class="bold" style="width:92%">92% &nbsp;</span>
+									<span class="bold" data-progress="92%"></span>
 							</div>
 						</div>
 						<div class="technique">
 							<h3>SQL Database</h3>
 							<div>
-									<span class="bold" style="width:95%">95% &nbsp;</span>
+									<span class="bold" data-progress="95%"></span>
 							</div>
 						</div>
 					</div>
+				</div>
 			</div>
 		</section>
 		<!-- End Skills -->
@@ -166,12 +180,13 @@
 		<!-- Start Education -->
 		<section class="education flow-hidden">
 			<div class="container">
-					<div class="my-education flt-left">
+				<div class="education-content">
+					<div class="my-education">
 						<h2 class="my-title">My Education</h2>
 						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
 						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
 					</div>
-					<div class="exp-education flt-left">
+					<div class="exp-education">
 						<div class="certificate">
 							<h2 class="my-title-s">Graphics design Diploma</h2>
 							<p class=" ">Reeves College / June 2008 - May 2010</p>
@@ -187,14 +202,15 @@
 							<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
 						</div>
 					</div>
-					<div class="clearfix"></div>
-					<hr/>
-					<div class="my-work flt-left">
+				</div>
+				<hr/>
+				<div class="work-content">
+					<div class="my-work">
 						<h2 class="my-title">Work Experience</h2>
 						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
 						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
 					</div>
-					<div class="exp-work flt-left">
+					<div class="exp-work">
 						<div class="certificate">
 							<h2 class="my-title-s">Lead Web Design</h2>
 							<p class=" ">ABC Company, Saskatoon / June 2011 - Present</p>
@@ -217,6 +233,7 @@
 							<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
 						</div>
 					</div>
+				</div>
 			</div>
 		</section>
 		<!-- End Education -->
@@ -224,13 +241,29 @@
 		<!-- Start Testimonials -->
 		<section id="testimonials" class="testimonials text-center flow-hidden">
 			<div class="container">
-					<q class="bold">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</q>
-					<h2 class="text-uppercase">John Stone</h2>
+					<div class="text">
+						<div class="box one">
+							<q class="bold">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.</q>
+							<h2 class="text-uppercase">Linda J. Rockefeller</h2>
+						</div>
+						<div class="box two active">
+							<q class="bold">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</q>
+							<h2 class="text-uppercase">John Stone</h2>
+						</div>
+						<div class="box three">
+							<q class="bold">Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</q>
+							<h2 class="text-uppercase">Ryan Pojman</h2>
+						</div>
+						<div class="box four">
+							<q class="bold">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei.  Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</q>
+							<h2 class="text-uppercase">Sarah Hegel</h2>
+						</div>
+					</div>
 					<ul>
-						<li></li>
-						<li class="active"></li>
-						<li></li>
-						<li></li>
+						<li data-test=".one"></li>
+						<li data-test=".two" class="active"></li>
+						<li data-test=".three"></li>
+						<li data-test=".four"></li>
 					</ul>
 			</div>
 		</section>
@@ -241,16 +274,22 @@
 			<div class="container">
 					<h2 class="my-title">Portofolio</h2>
 					<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+					<ul class="text-center">
+						<li data-prot=".all" class="active">All</li>
+						<li data-prot=".web">Web Design</li>
+						<li data-prot=".graphic">Graphic Design</li>
+						<li data-prot=".logo">Logo Design</li>
+						<li data-prot=".photo">Photographing</li>
+					</ul>
 					<div class="our-work flow-hidden">
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/01.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/02.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/03.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/04.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/05.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/06.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/07.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/08.png" alt="Test" /> </a> </div>
-						<div> <a href="#" target="_blank">  <img src="images/portofolio/09.png" alt="Test" /> </a> </div>
+						<div class="web all"> <a href="#" target="_blank">  <img src="images/portofolio/01.png" alt="Test" /> </a> </div>
+						<div class="photo all"> <a href="#" target="_blank">  <img src="images/portofolio/02.png" alt="Test" /> </a> </div>
+						<div class="graphic all"> <a href="#" target="_blank">  <img src="images/portofolio/03.png" alt="Test" /> </a> </div>
+						<div class="logo all"> <a href="#" target="_blank">  <img src="images/portofolio/04.png" alt="Test" /> </a> </div>
+						<div class="logo all"> <a href="#" target="_blank">  <img src="images/portofolio/05.png" alt="Test" /> </a> </div>
+						<div class="graphic all"> <a href="#" target="_blank">  <img src="images/portofolio/06.png" alt="Test" /> </a> </div>
+						<div class="web all"> <a href="#" target="_blank">  <img src="images/portofolio/07.png" alt="Test" /> </a> </div>
+						<div class="photo all"> <a href="#" target="_blank">  <img src="images/portofolio/08.png" alt="Test" /> </a> </div>
 					</div>
 			</div>
 		</section>
@@ -260,26 +299,28 @@
 		<!-- Start Contact Me -->
 		<section id="contact" class="contact flow-hidden">
 			<div class="container">
-				<div class="info flt-left">
-					<h2 class="my-title">Contact Me</h2>
-					<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
-					<address  class=" ">
-						122 33rd Street East<br/>
-						Saskatoon, SK<br/>
-						S7K 1R9
-					</address>
-					<p><strong>Email : </strong> <a href=""> info@focal.com</a></p>
-					<p><strong>Phone : </strong> <a href=""> 01119421377</a></p>
+				<div class="contact-content">
+					<div class="info">
+						<h2 class="my-title">Contact Me</h2>
+						<p class=" ">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+						<address  class=" ">
+							122 33rd Street East<br/>
+							Saskatoon, SK<br/>
+							S7K 1R9
+						</address>
+						<p><strong>Email : </strong> <a href=""> info@focal.com</a></p>
+						<p><strong>Phone : </strong> <a href=""> 01119421377</a></p>
+					</div>
+					<form class="form">
+						<label class="bold">Name*</label>
+						<input type="text"/>
+						<label class="bold">Email Address*</label>
+						<input type="email"/>
+						<label class="bold">Message*</label>
+						<textarea></textarea>
+						<button class="my-button">Contact Me</button>
+					</form>
 				</div>
-				<form class="form flt-left">
-					<label class="bold">Name*</label>
-					<input type="text"/>
-					<label class="bold">Email Address*</label>
-					<input type="email"/>
-					<label class="bold">Message*</label>
-					<textarea></textarea>
-					<button class="my-button">Contact Me</button>
-				</form>
 			</div>
 		</section>
 		<!-- End Contact Me -->
@@ -287,7 +328,7 @@
 
 		<!-- Start Footer -->
 		<footer class="footer text-center text-uppercase flow-hidden">
-			<p class="bold">Copyright &copy; 2020 Focal, Designed by Mohamed Shehata</p>
+			<p class="bold">Copyright &copy; <span class="year">2020</span> Focal, Designed by Mohamed Shehata</p>
 			<ul class="text-center">
 				<li><i class="fa fa-facebook-square fa-lg"></i></li>
 				<li><i class="fa fa-google-plus fa-lg"></i></li>
@@ -301,7 +342,7 @@
 
 
 
-		<script href="js/jquery-1.12.4.min.js"></script>
-		<script href="js/custom.js"></script>
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/custom.js"></script>
 	</body>
 </html>
